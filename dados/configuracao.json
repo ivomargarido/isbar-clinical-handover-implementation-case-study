@@ -1,0 +1,44 @@
+{
+  "_aviso": "Configuração de demonstração, baseada na secção 4.2 da UC-01 (docs/01). É uma proposta, não uma decisão institucional.",
+
+  "periodo_referencia": "turno_atual",
+  "historico_consulta": false,
+
+  "heranca_por_padrao": {
+    "_explicacao": "Herança de cada componente ao abrir um novo registo (docs/01, secção 4.1). 'herda' = pode trazer conteúdo do registo anterior; 'em_branco' = abre vazio.",
+    "P1": {"frases": "herda", "texto_livre": "herda"},
+    "P2": {"arvore": "herda", "observacoes": "em_branco", "resumo": "por_confirmar"},
+    "P3": {"medicoes": "em_branco", "nota_associada": "em_branco"},
+    "P4": {"estado": "em_branco", "nota_associada": "em_branco"}
+  },
+
+  "dominios": {
+    "Eliminação": [
+      {"intervencao": "Vigiar eliminação urinária", "padrao": "P1", "componentes": ["frases", "texto_livre"]},
+      {"intervencao": "Vigiar eliminação intestinal", "padrao": "P1", "componentes": ["frases", "texto_livre"]},
+      {"intervencao": "Monitorizar eliminação urinária", "padrao": "P3", "componentes": ["medicoes", "nota_associada"], "condicional": true},
+      {"intervencao": "Monitorizar eliminação intestinal", "padrao": "P3", "componentes": ["medicoes", "nota_associada"]}
+    ],
+    "Comportamento": [
+      {"intervencao": "Vigiar comportamento", "padrao": "P1", "componentes": ["texto_livre"]}
+    ],
+    "Pele": [
+      {"intervencao": "Avaliar pele", "padrao": "P2", "componentes": ["arvore", "observacoes"], "filtro_arvore": "positivos_e_indicar_negativos"}
+    ],
+    "Alimentação": [
+      {"intervencao": "Vigiar refeição", "padrao": "P1", "componentes": ["frases", "texto_livre"]},
+      {"intervencao": "Vigiar conteúdo gástrico", "padrao": "P1", "componentes": ["frases", "texto_livre"]},
+      {"intervencao": "Monitorizar conteúdo gástrico", "padrao": "P3", "componentes": ["medicoes", "nota_associada"]}
+    ],
+    "Hemodinâmica": [
+      {"intervencao": "Monitorizar frequência cardíaca", "padrao": "P3", "componentes": ["medicoes", "nota_associada"]},
+      {"intervencao": "Monitorizar tensão arterial", "padrao": "P3", "componentes": ["medicoes", "nota_associada"]},
+      {"intervencao": "Avaliar respiração", "padrao": "P1", "componentes": ["frases", "texto_livre"]},
+      {"intervencao": "Gerir oxigenoterapia", "padrao": "P4", "componentes": ["estado", "nota_associada"]}
+    ]
+  },
+
+  "campos_manuais": [
+    {"dominio": "Hemodinâmica", "campo": "Último antipirético e hora", "origem": "Fonte externa (plataforma de medicação), não integrada"}
+  ]
+}

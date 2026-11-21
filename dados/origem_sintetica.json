@@ -1,0 +1,213 @@
+{
+  "_aviso": "DADOS SINTÉTICOS. Episódios, registos, profissionais e valores são inventados para a demonstração sintética. Não correspondem a doentes, profissionais nem registos reais. A estrutura segue a UC-01 (docs/01, secção 4.1), descrita a partir do que se vê no ecrã, sem levantamento autorizado.",
+  "turnos": [
+    {"id": "D1-M", "ordem": 1, "descricao": "Dia 1, manhã (sintético)"},
+    {"id": "D1-T", "ordem": 2, "descricao": "Dia 1, tarde (sintético)"}
+  ],
+  "episodios": [
+    {"id_episodio": "SINT-EP-A", "cama": "3"},
+    {"id_episodio": "SINT-EP-B", "cama": null}
+  ],
+  "registos": [
+    {
+      "id_registo": "SINT-R001",
+      "id_episodio": "SINT-EP-A",
+      "intervencao": "Vigiar eliminação urinária",
+      "turno": "D1-T",
+      "programacao": "por_turno",
+      "hora_declarada": null,
+      "registado_por": "Enf. Sintético 2",
+      "componentes": {
+        "frases": ["Urina de cor amarela clara"],
+        "texto_livre": "Fralda molhada em todas as mudas."
+      }
+    },
+    {
+      "id_registo": "SINT-R002",
+      "id_episodio": "SINT-EP-A",
+      "intervencao": "Vigiar eliminação intestinal",
+      "turno": "D1-T",
+      "programacao": "por_turno",
+      "hora_declarada": null,
+      "registado_por": null,
+      "componentes": {
+        "frases": ["Sem dejeção no turno"],
+        "texto_livre": ""
+      }
+    },
+    {
+      "id_registo": "SINT-R003",
+      "id_episodio": "SINT-EP-A",
+      "intervencao": "Monitorizar eliminação intestinal",
+      "turno": "D1-T",
+      "programacao": "horario",
+      "hora_declarada": "18:00",
+      "registado_por": "Enf. Sintético 2",
+      "componentes": {
+        "medicoes": [
+          {"parametro": "Dejeções", "valor": "1", "unidade": null, "hora": "18:00"}
+        ],
+        "nota_associada": ""
+      }
+    },
+    {
+      "id_registo": "SINT-R010",
+      "id_episodio": "SINT-EP-A",
+      "intervencao": "Vigiar comportamento",
+      "turno": "D1-T",
+      "programacao": "por_turno",
+      "hora_declarada": null,
+      "registado_por": "Enf. Sintético 2",
+      "componentes": {
+        "frases": ["Criança calma e colaborante"],
+        "texto_livre": ""
+      }
+    },
+    {
+      "id_registo": "SINT-R020",
+      "id_episodio": "SINT-EP-A",
+      "intervencao": "Avaliar pele",
+      "turno": "D1-T",
+      "programacao": "por_turno",
+      "hora_declarada": null,
+      "registado_por": "Enf. Sintético 2",
+      "componentes": {
+        "arvore": [
+          {"grupo": "Integridade", "item": "Eritema", "valor": "sim"},
+          {"grupo": "Integridade", "item": "Úlcera", "valor": "não"},
+          {"grupo": "Integridade", "item": "Edema", "valor": null}
+        ],
+        "observacoes": "Eritema na região da fralda.",
+        "resumo": "Eritema"
+      }
+    },
+    {
+      "id_registo": "SINT-R030",
+      "id_episodio": "SINT-EP-A",
+      "intervencao": "Vigiar refeição",
+      "turno": "D1-M",
+      "programacao": "por_turno",
+      "hora_declarada": null,
+      "registado_por": "Enf. Sintético 1",
+      "componentes": {
+        "frases": ["Aceitou a refeição"],
+        "texto_livre": "Comeu metade do almoço."
+      }
+    },
+    {
+      "id_registo": "SINT-R031",
+      "id_episodio": "SINT-EP-A",
+      "intervencao": "Vigiar conteúdo gástrico",
+      "turno": "D1-T",
+      "programacao": "por_turno",
+      "hora_declarada": null,
+      "registado_por": "Enf. Sintético 2",
+      "componentes": {
+        "frases": [],
+        "texto_livre": "16h - 20 ml; 20h - 15 ml"
+      }
+    },
+    {
+      "id_registo": "SINT-R032",
+      "id_episodio": "SINT-EP-A",
+      "intervencao": "Monitorizar conteúdo gástrico",
+      "turno": "D1-T",
+      "programacao": "horario",
+      "hora_declarada": "20:00",
+      "registado_por": "Enf. Sintético 2",
+      "componentes": {
+        "medicoes": [
+          {"parametro": "Conteúdo gástrico", "valor": "20", "unidade": "ml", "hora": "16:00"},
+          {"parametro": "Conteúdo gástrico", "valor": "15", "unidade": "ml", "hora": "20:00"}
+        ],
+        "nota_associada": ""
+      }
+    },
+    {
+      "id_registo": "SINT-R040",
+      "id_episodio": "SINT-EP-A",
+      "intervencao": "Monitorizar frequência cardíaca",
+      "turno": "D1-T",
+      "programacao": "horario",
+      "hora_declarada": "20:00",
+      "registado_por": "Enf. Sintético 2",
+      "componentes": {
+        "medicoes": [
+          {"parametro": "FC", "valor": "120", "unidade": "bpm", "hora": "16:00"},
+          {"parametro": "FC", "valor": "128", "unidade": "bpm", "hora": "20:00"}
+        ],
+        "nota_associada": ""
+      }
+    },
+    {
+      "id_registo": "SINT-R041",
+      "id_episodio": "SINT-EP-A",
+      "intervencao": "Monitorizar tensão arterial",
+      "turno": "D1-T",
+      "programacao": "horario",
+      "hora_declarada": "16:00",
+      "registado_por": "Enf. Sintético 2",
+      "componentes": {
+        "medicoes": [
+          {"parametro": "TA", "valor": "98/60", "unidade": "mmHg", "hora": "16:00"}
+        ],
+        "nota_associada": ""
+      }
+    },
+    {
+      "id_registo": "SINT-R042",
+      "id_episodio": "SINT-EP-A",
+      "intervencao": "Avaliar respiração",
+      "turno": "D1-T",
+      "programacao": "por_turno",
+      "hora_declarada": null,
+      "registado_por": "Enf. Sintético 2",
+      "componentes": {
+        "frases": ["Eupneica"],
+        "texto_livre": ""
+      }
+    },
+    {
+      "id_registo": "SINT-R043",
+      "id_episodio": "SINT-EP-A",
+      "intervencao": "Gerir oxigenoterapia",
+      "turno": "D1-T",
+      "programacao": "por_turno",
+      "hora_declarada": null,
+      "registado_por": "Enf. Sintético 2",
+      "componentes": {
+        "estado": "realizada",
+        "nota_associada": ""
+      }
+    },
+    {
+      "id_registo": "SINT-R044",
+      "id_episodio": "SINT-EP-A",
+      "intervencao": "Gerir oxigenoterapia",
+      "turno": "D1-M",
+      "programacao": "por_turno",
+      "hora_declarada": null,
+      "registado_por": "Enf. Sintético 1",
+      "componentes": {
+        "estado": "realizada",
+        "nota_associada": "12:30h - 3L/min; 15h - 2L/min"
+      }
+    },
+    {
+      "id_registo": "SINT-R099",
+      "id_episodio": "SINT-EP-A",
+      "intervencao": "Monitorizar sinais vitais",
+      "_nota": "Janela composta. Repete os valores que já estão nas intervenções finais (R040, R041). A configuração não aponta para ela (C-11).",
+      "turno": "D1-T",
+      "programacao": "horario",
+      "hora_declarada": "20:00",
+      "registado_por": "Enf. Sintético 2",
+      "componentes": {
+        "medicoes": [
+          {"parametro": "FC", "valor": "128", "unidade": "bpm", "hora": "20:00"},
+          {"parametro": "TA", "valor": "98/60", "unidade": "mmHg", "hora": "16:00"}
+        ]
+      }
+    }
+  ]
+}

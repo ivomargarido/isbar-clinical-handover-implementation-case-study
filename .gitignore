@@ -1,0 +1,13 @@
+# Ambiente virtual e caches de Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Cópia dos ficheiros anteriores à preparação para o GitHub (não publicar)
+_antes_da_preparacao_github/
